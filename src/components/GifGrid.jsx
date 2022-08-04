@@ -26,7 +26,7 @@ export const GifGrid = ({ category, onHideGrid }) => {
                         <GifGridItem
                             key={image.id}
                             {...image}
-                            isShown= {showGrid}
+                            isShown= {hideGrid}
                         />
                     ))
                 }
