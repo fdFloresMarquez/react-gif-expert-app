@@ -5,10 +5,11 @@ Live Demo: https://gif-expert-facuflo.netlify.app/
 
 ## Instrucciones: 
 Buscar gifs que más les guste y presionar enter para buscar!
-Si desean probarlo localmente:
+Si desean probarlo localmente, deben instalar dependencias:
 ```
 npm install
 ```
+Correr app
 ```
 npm run dev
 ```
