@@ -3,6 +3,16 @@ Live Demo: https://gif-expert-facuflo.netlify.app/
 
 ![alt text](https://raw.githubusercontent.com/fdFloresMarquez/react-gif-expert-app/main/img.png)
 
+## Instrucciones: 
+Buscar gifs que más les guste y presionar enter para buscar!
+Si desean probarlo localmente:
+```
+npm install
+```
+```
+npm run dev
+```
+
 ## Conceptos aplicados:
 
 - Custom Hooks
