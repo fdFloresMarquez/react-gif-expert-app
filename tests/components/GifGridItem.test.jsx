@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { GifGridItem } from "../../src/components/GifGridItem";
 
 
-describe('Pruebas en GifGridItem', () => {
+describe('Pruebas en <GifGridItem />', () => {
 
     const title = "Naruto";
     const url = "https://naruto.com/";
