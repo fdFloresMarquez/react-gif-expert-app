@@ -9,7 +9,7 @@ Si desean probarlo localmente, deben instalar dependencias:
 ```
 npm install
 ```
-Correr app
+Correr app:
 ```
 npm run dev
 ```
