@@ -2,7 +2,7 @@
 export const GifGridItem = ({ title, url, isShown}) => {
 
     if(!isShown){
-        return;
+        return '';
     }
     
     return (
