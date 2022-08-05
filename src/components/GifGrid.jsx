@@ -1,14 +1,14 @@
-
+import PropTypes from 'prop-types';
 import { GifGridItem } from "./GifGridItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
-export const GifGrid = ({ category, onHideGrid }) => {
+export const GifGrid = ({ category, onRemoveGrid }) => {
 
     const { images, isLoading } = useFetchGifs(category);
 
     //Oculta los grid y remueve la categoria correspondiente del arreglo.
-    const hideGrid = () => {
-        onHideGrid(category)
+    const removeGrid = () => {
+        onRemoveGrid(category)
     }
 
     return (
@@ -26,17 +26,21 @@ export const GifGrid = ({ category, onHideGrid }) => {
                         <GifGridItem
                             key={image.id}
                             {...image}
-                            isShown= {hideGrid}
                         />
                     ))
                 }
             </div>
             
             <div>
-                <button onClick={hideGrid}>Borrar</button>
+                <button onClick={removeGrid}>Borrar</button>
             </div>
 
 
         </>
     )
+}
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired,
+    onRemoveGrid: PropTypes.func
 }

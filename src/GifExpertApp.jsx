@@ -11,7 +11,7 @@ export const GifExpertApp = () => {
     }
 
     //Remueve de la categorias la que haya sido ocultada.
-    const onHideGrid = (categoryToRemove) => {
+    const onRemoveGrid = (categoryToRemove) => {
         setCategories(prev => prev.filter(category => category !== categoryToRemove ))
     }
 
@@ -31,7 +31,7 @@ export const GifExpertApp = () => {
                     <GifGrid 
                         key={ category } 
                         category={ category }
-                        onHideGrid={(value) => onHideGrid(value)}/>
+                        onRemoveGrid={(value) => onRemoveGrid(value)}/>
                 ))
             }
 
