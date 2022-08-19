@@ -30,7 +30,7 @@ npm run dev
 
 - Crear listados
 
-- keys
+- Keys
 
 - Giphy
 
